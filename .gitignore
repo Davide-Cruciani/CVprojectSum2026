@@ -1,11 +1,5 @@
 .secret
-/jpeg-ai-antifor
-/jpeg-ai-reference-software
 CNN_synth_testset.zip
-/data
-/models
 project/data/
 project/cfg
 **/__pycache__
-/models
-/JPEGAI

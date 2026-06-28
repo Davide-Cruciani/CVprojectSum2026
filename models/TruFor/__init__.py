@@ -1,2 +1,2 @@
-from ...project.models.TruFor import train
-from ...project.models.TruFor import lib
+from . import train
+from . import lib
