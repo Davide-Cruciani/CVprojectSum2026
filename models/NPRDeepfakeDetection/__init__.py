@@ -1,3 +1,3 @@
-from ...project.models.NPRDeepfakeDetection import options
-from ...project.models.NPRDeepfakeDetection import networks
-from ...project.models.NPRDeepfakeDetection import validate
+from . import options
+from . import networks
+from . import validate

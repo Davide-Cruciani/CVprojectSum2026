@@ -1,3 +1,3 @@
-from ....project.models.NPRDeepfakeDetection.networks import resnet
-from ....project.models.NPRDeepfakeDetection.networks import base_model
-from ....project.models.NPRDeepfakeDetection.networks import trainer
+from . import resnet
+from . import base_model
+from . import trainer

@@ -34,12 +34,12 @@ import torch.optim
 torch.autograd.set_detect_anomaly(True)
 from tensorboardX import SummaryWriter
 
-from models.TruFor.lib.config import config, update_config
-from models.TruFor.lib.core.function import train, validate
-from models.TruFor.lib.utils import get_model, get_optimizer
-from models.TruFor.lib.utils import create_logger, FullModel, adjust_learning_rate
+from lib.config import config, update_config
+from lib.core.function import train, validate
+from lib.utils import get_model, get_optimizer
+from lib.utils import create_logger, FullModel, adjust_learning_rate
 
-from models.TruFor.dataset.data_core import myDataset
+from dataset.data_core import myDataset
 import albumentations
 
 

@@ -27,9 +27,9 @@ path = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..')
 if path not in sys.path:
     sys.path.insert(0, path)
 
-from models.TruFor.lib.config import config, update_config
-from models.TruFor.lib.utils import get_model
-from models.TruFor.dataset.dataset_test import TestDataset
+from .lib.config import config, update_config
+from .lib.utils import get_model
+from .dataset.dataset_test import TestDataset
 
 parser = argparse.ArgumentParser(description='Test TruFor')
 parser.add_argument('-g',   '--gpu',     type=int, default=0, help='device, use -1 for cpu')
