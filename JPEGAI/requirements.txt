@@ -1,0 +1,19 @@
+numpy>=1.23
+scipy>=1.9
+pandas>=1.5
+scikit-image>=0.19
+scikit-learn>=1.2
+torchvision  # match torch
+pytorch-msssim>=0.2.1
+ptflops>=0.7
+
+protobuf==3.20.*
+tensorboard>=2.10
+
+opencv-python
+einops
+addict
+prettytable
+psutil
+commentjson
+bjontegaard
