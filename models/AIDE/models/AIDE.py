@@ -228,9 +228,16 @@ class AIDE_Model(nn.Module):
         self.fc = Mlp(2048 + 256 , 1024, 2)
 
         print("build model with convnext_xxl")
-        self.openclip_convnext_xxl, _, _ = open_clip.create_model_and_transforms(
-            "convnext_xxlarge", pretrained=convnext_path
-        )
+        if convnext_path is None:
+            self.openclip_convnext_xxl, _, _ = open_clip.create_model_and_transforms(
+                "convnext_xxlarge",
+                pretrained=None
+            )
+        else:
+            self.openclip_convnext_xxl, _, _ = open_clip.create_model_and_transforms(
+                "convnext_xxlarge",
+                pretrained=convnext_path
+            )
 
         self.openclip_convnext_xxl = self.openclip_convnext_xxl.visual.trunk
         self.openclip_convnext_xxl.head.global_pool = nn.Identity()
