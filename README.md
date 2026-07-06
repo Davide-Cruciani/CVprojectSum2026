@@ -11,8 +11,3 @@ and put them in /models/TruFor/weights
 
 Download wongCNN weights
 execute models/CNNDetection/weights/download_weights.sh
-
-
-Download AIDE GEImage checkpoint from 
-https://drive.google.com/drive/folders/1qx76UFvDpgCxaPLBCmsA2WY-SSzeJrd4?usp=sharing
-and put it in AIDE/weights
