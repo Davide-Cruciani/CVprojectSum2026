@@ -30,9 +30,11 @@ The project revolves around the notebook **CVprojectSum2026/project/main.ipynb**
 
 If it is the first time, its necessary to run the dataset setup section, controlled by the vaiable **DOWLOAD** in the **Globals** section of the notebook. Set it to True to enable the dataset contruction. 
 
-Any execution after the first can be done with DOWNLOAD=False. 
+It will also be necessary to enable the **TRAINING** global variable to allow the creation of the weights for the modified model
 
-The varibale **REMOVAL** controls if the subsections of the original datasets are preserved after the construction of the *train*, *validation* and *test* datasets
+Any execution after the first can be done with DOWNLOAD=False and TRAINING=False. 
+
+The varibale **SOURCE_FOLDER_REMOVAL** controls if the subsections of the original datasets are preserved after the construction of the *train*, *validation* and *test* datasets
 
 Any variable in globals that ends with **_DIR** and be chaged to adjust the position of the corresponding directories in the system
 
