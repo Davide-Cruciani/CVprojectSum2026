@@ -6,6 +6,12 @@ clone https://github.com/Davide-Cruciani/CVprojectSum2026.git
 cd CVprojectSum2026
 ~~~
 
+## Make the environment
+~~~
+conda env create -f environment.yml
+~~~
+
+
 ## Download additional components
 Download CCN_synth in data
 ~~~
